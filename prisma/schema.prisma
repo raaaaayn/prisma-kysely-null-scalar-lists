@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator kysely {
+  provider = "prisma-kysely"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model TestModel {
+  id Int @id @default(autoincrement())
+
+  list1 String[]
+  list2 Int[]
+  list3 Json[]
+}
