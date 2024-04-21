@@ -28,9 +28,9 @@ export default function Home() {
           {Object.keys(prismaSelect).map((d) => {
             return (
               <span className="block ml-3">
-                {/*@ts-expect-error*/}
                 <span>{d}: </span>{" "}
                 <span className="bg-green-100">
+                  {/*@ts-expect-error*/}
                   {JSON.stringify(prismaSelect[d])},{" "}
                 </span>
               </span>
@@ -46,9 +46,9 @@ export default function Home() {
           {Object.keys(kyselySelect).map((d) => {
             return (
               <span className="block ml-3">
-                {/*@ts-expect-error*/}
                 <span>{d}: </span>{" "}
                 <span className="bg-green-100">
+                  {/*@ts-expect-error*/}
                   {JSON.stringify(kyselySelect[d])},{" "}
                 </span>
               </span>
